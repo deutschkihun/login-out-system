@@ -1,15 +1,12 @@
 import React from 'react';
 import {
-  FaBehance,
-  FaFacebook,
   FaLinkedin,
   FaTwitter,
-  FaSketch,
   FaHome,
   FaUserFriends,
   FaFolderOpen,
-  FaCalendarAlt,
   FaWpforms,
+  FaGithub,
 } from 'react-icons/fa';
 export const links = [
   {
@@ -20,8 +17,8 @@ export const links = [
   },
   {
     id: 2,
-    url: '/team',
-    text: 'team',
+    url: '/about',
+    text: 'About',
     icon: <FaUserFriends />,
   },
   {
@@ -32,12 +29,6 @@ export const links = [
   },
   {
     id: 4,
-    url: '/calendar',
-    text: 'calendar',
-    icon: <FaCalendarAlt />,
-  },
-  {
-    id: 5,
     url: '/documents',
     text: 'documents',
     icon: <FaWpforms />,
@@ -48,7 +39,7 @@ export const social = [
   {
     id: 1,
     url: 'https://www.twitter.com',
-    icon: <FaFacebook />,
+    icon: <FaGithub />,
   },
   {
     id: 2,
@@ -59,15 +50,5 @@ export const social = [
     id: 3,
     url: 'https://www.twitter.com',
     icon: <FaLinkedin />,
-  },
-  {
-    id: 4,
-    url: 'https://www.twitter.com',
-    icon: <FaBehance />,
-  },
-  {
-    id: 5,
-    url: 'https://www.twitter.com',
-    icon: <FaSketch />,
   },
 ];
