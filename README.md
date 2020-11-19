@@ -37,8 +37,3 @@ Hello
 - in this file you can see <username> and <password> area.
 - here you need to add your username and password of database access
 - for that first you have to create mongo db account -> create new projects -> database access -> add new database user
-
-### Demo
-
-![login1](https://user-images.githubusercontent.com/45092135/98518825-35d89500-2270-11eb-89ec-0676d999b799.JPG)
-![login2](https://user-images.githubusercontent.com/45092135/98518830-37a25880-2270-11eb-94ed-9585d9809688.JPG)
