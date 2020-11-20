@@ -7,6 +7,7 @@ import {
   FaFolderOpen,
   FaWpforms,
   FaGithub,
+  FaLockOpen
 } from 'react-icons/fa';
 export const links = [
   {
@@ -33,6 +34,15 @@ export const links = [
     text: 'documents',
     icon: <FaWpforms />,
   },
+
+   {
+    id: 5,
+    url: '/login',
+    text: 'login',
+    icon: <FaLockOpen/>,
+  },
+
+
 ];
 
 export const social = [
