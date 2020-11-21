@@ -35,18 +35,21 @@ function LoginPage(props) {
     }
 
     return (
-        <div className="loginPage">
-            <form className="data" onSubmit={onSubmitHandler}>
-                <label>Email</label>
-                <input type="email" value={Email} onChange={emailHandler}/>
-                <label>Password</label>
-                <input type="password" value={Password} onChange={passwordHandler}/>
-                <br/>
-                <button type='submit'>
-                    Login 
-                </button>
-            </form>
-        </div>
+        <main>
+            <div className="loginPage">
+                <form className="data" onSubmit={onSubmitHandler}>
+                    <label>Email</label>
+                    <input type="email" value={Email} onChange={emailHandler}/>
+                    <label>Password</label>
+                    <input type="password" value={Password} onChange={passwordHandler}/>
+                    <br/>
+                    <button type='submit'>
+                        Login 
+                    </button>
+                </form>
+            </div>
+        </main>
+     
     )
 }
 

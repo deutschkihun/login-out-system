@@ -46,7 +46,7 @@ function RegisterPage(props) {
 
 
     return (
-        <div className="loginPage">
+        <div className="registerPage">
             <form className="data" onSubmit={onSubmitHandler}>
 
                 <label>Email</label>
