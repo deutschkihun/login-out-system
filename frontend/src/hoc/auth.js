@@ -1,8 +1,8 @@
 
 import React, { useEffect } from 'react';
-import Axios from 'axios';
-import { useDispatch } from 'react-redux';
+import {useSelector, useDispatch } from 'react-redux';
 import { auth } from '../_actions/user_actions';
+
 
 export default function (SpecificComponent, option, adminRoute = null) {
 
@@ -11,6 +11,7 @@ export default function (SpecificComponent, option, adminRoute = null) {
     //true    =>  only for login user
     //false   =>  not allowed for login user
     function AuthenticationCheck(props) {
+        const user = useSelector(state => state.user)
         const dispatch = useDispatch();
 
         useEffect(() => {
@@ -36,7 +37,7 @@ export default function (SpecificComponent, option, adminRoute = null) {
         }, [])
 
         return (
-            <SpecificComponent />
+            <SpecificComponent {...props} user={user} />
         )
     }
     return AuthenticationCheck

@@ -1,19 +1,11 @@
 Hello
 
-This project is my own style(or it's named HuniCode) boilerplate
-
-The reason why I made this project file is that i don't want to spend time making similar functionalities for almost every wep application project
-
 This project contains
 
 - login-out system
 - Navbar
 - Sidebar
 - MongoDB connection
-
-Thank you
-
-Hello
 
 **How to use this project file**
 

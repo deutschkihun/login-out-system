@@ -8,6 +8,7 @@ import MenuButton from './MenuButton'
 import Sidebar from './Sidebar'
 import LoginPage from './components/LoginPage'
 import RegisterPage from './components/RegisterPage'
+import LogoutPage from './components/LogoutPage'
 import auth from './hoc/auth'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component= {auth(LandingPage,null)}   />
+          <Route exact path="/logout" component= {auth(LogoutPage,true)}   />
           <Route exact path="/register" component={auth(RegisterPage, false)  }/>
           <Route exact path="/login" component={auth(LoginPage,false)}/>
           <Route exact path="/about" component={auth(About,null)}/>
