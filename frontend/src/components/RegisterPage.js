@@ -7,6 +7,7 @@ function RegisterPage(props) {
     const [Email, setEmail] = useState("")
     const [Password, setPassword] = useState("")
     const [Name, setName] = useState("")
+    const [LastName, setLastName] = useState("")
     const [ConfirmPassword, setConfirmPassword] = useState("")
 
     const emailHandler = (e) => {
@@ -17,6 +18,10 @@ function RegisterPage(props) {
     }
     const nameHandler = (e) => {
         setName(e.currentTarget.value)
+    }
+
+    const lastnameHandler = (e) => {
+        setLastName(e.currentTarget.value)
     }
     const confirmpasswordHandler = (e) => {
         setConfirmPassword(e.currentTarget.value)
@@ -32,7 +37,8 @@ function RegisterPage(props) {
         let body = {
             email: Email,
             password: Password,
-            name: Name
+            name: Name,
+            lastname: LastName
         }
         dispatch(registerUser(body))
             .then(response => {
@@ -49,12 +55,15 @@ function RegisterPage(props) {
         <div className="registerPage">
             <form className="data" onSubmit={onSubmitHandler}>
 
-                <label>Email</label>
-                <input type="email" value={Email} onChange={emailHandler}/>
-                    
                 <label>Name</label>
                 <input type="text" value={Name} onChange={nameHandler}/>
 
+                <label>Lastname</label>
+                <input type="text" value={LastName} onChange={lastnameHandler}/>
+
+                <label>Email</label>
+                <input type="email" value={Email} onChange={emailHandler}/>
+                    
                 <label>Password</label>
                 <input type="password" value={Password} onChange={passwordHandler}/>
                 
@@ -62,7 +71,7 @@ function RegisterPage(props) {
                 <input type="password" value={ConfirmPassword} onChange={confirmpasswordHandler}/>
                 <br/>
                 <button type='submit'>
-                    Login 
+                    Register 
                 </button>
             </form>
         </div>
